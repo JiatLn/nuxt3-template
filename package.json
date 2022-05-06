@@ -7,7 +7,9 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.23.0",
     "@unocss/nuxt": "^0.32.13",
+    "eslint": "^8.14.0",
     "nuxt": "3.0.0-rc.1"
   }
 }
