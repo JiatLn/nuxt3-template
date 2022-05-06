@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheCarousel />
-    <div>这里是首页</div>
+    <div text-red font-bold>这里是首页</div>
   </div>
 </template>
 

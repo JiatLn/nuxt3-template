@@ -7,6 +7,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@unocss/nuxt": "^0.32.13",
     "nuxt": "3.0.0-rc.1"
   }
 }
