@@ -1,8 +1,11 @@
 <template>
-  <div>
-    <TheHeader />
-    <TheNav />
+  <NuxtLayout>
     <NuxtPage />
-    <TheFooter />
-  </div>
+  </NuxtLayout>
 </template>
+
+<script setup>
+useHead({
+  title: '这里是标题',
+});
+</script>

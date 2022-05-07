@@ -1,5 +1,10 @@
 <template>
-  <footer>这是底部</footer>
+  <main>
+    <TheHeader />
+    <TheNav />
+    <slot />
+    <TheFooter />
+  </main>
 </template>
 
 <script setup lang="ts"></script>

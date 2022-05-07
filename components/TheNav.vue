@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <nav>
     <div>这是导航栏</div>
-    <NuxtLink to="/"> Home page </NuxtLink>
-    <NuxtLink to="/about"> About page </NuxtLink>
-  </div>
+    <NuxtLink to="/" text-red>Home page</NuxtLink>
+    <NuxtLink to="/about" text-green>About page</NuxtLink>
+  </nav>
 </template>
 
 <script setup lang="ts"></script>
