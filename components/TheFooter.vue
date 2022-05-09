@@ -1,7 +1,7 @@
+<script setup lang="ts"></script>
+
 <template>
   <footer>这是底部</footer>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped lang="scss"></style>
