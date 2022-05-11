@@ -2,8 +2,8 @@
 
 <template>
   <main>
-    <TheHeader />
     <TheNav />
+    <TheHeader />
     <slot />
     <TheFooter />
   </main>

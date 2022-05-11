@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: '这里是标题',
+  title: 'Nuxt3 Template',
   link: [
     {
       rel: 'icon', type: 'image/png', href: '/icon.png',

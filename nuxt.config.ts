@@ -8,9 +8,11 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
   ],
+  components: true,
   vite: {
     plugins: [
       Components({
+        dts: true,
         resolvers: [NaiveUiResolver()],
       }),
     ],
