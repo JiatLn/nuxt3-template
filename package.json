@@ -16,10 +16,10 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
-    "@unocss/nuxt": "^0.32.13",
-    "eslint": "^8.14.0",
-    "naive-ui": "^2.28.2",
-    "nuxt": "^3.0.0-rc.2",
-    "unplugin-vue-components": "^0.19.3"
+    "@unocss/nuxt": "^0.33.2",
+    "eslint": "^8.15.0",
+    "naive-ui": "^2.28.4",
+    "nuxt": "^3.0.0-rc.3",
+    "unplugin-vue-components": "^0.19.5"
   }
 }
