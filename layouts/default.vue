@@ -4,7 +4,9 @@
   <main>
     <TheNav />
     <TheHeader />
-    <slot />
+    <div min-h-100vh>
+      <slot />
+    </div>
     <TheFooter />
   </main>
 </template>

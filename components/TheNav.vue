@@ -28,7 +28,7 @@ const menuOptions: MenuOption[] = [
 ]
 
 const route = useRoute()
-const selectedKey = ref<string>(route.name as string || 'index')
+const selectedKey = computed<string>(() => route.name as string)
 </script>
 
 <template>
