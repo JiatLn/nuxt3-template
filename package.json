@@ -15,7 +15,7 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.23.0",
+    "@antfu/eslint-config": "^0.23.1",
     "@unocss/nuxt": "^0.33.4",
     "eslint": "^8.15.0",
     "naive-ui": "^2.28.4",
