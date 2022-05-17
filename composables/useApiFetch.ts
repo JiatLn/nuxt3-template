@@ -1,22 +1,27 @@
 import type { UseFetchOptions } from '#app'
 
-export interface FetchResponse<T> {
+export interface FetchData<T> {
+  msg: string
+  code: number
+  data: T
+}
+
+export interface FetchRow<T> {
   total: number
   rows: Array<T>
   code: number
   msg: number
 }
 
-type FetchOption<T> = UseFetchOptions<FetchResponse<T>>
+type FetchType = FetchData<any> | FetchRow<any>
 
-async function useApiFetch<T>(url: string, options?: FetchOption<T>) {
+async function useApiFetch<T extends FetchType>(url: string, opts?: UseFetchOptions<unknown>): Promise<T> {
   const config = useRuntimeConfig().public
-  const { data, pending } = await useFetch<FetchResponse<T>>(url, {
+  const { data } = await useFetch(url, {
     baseURL: config.apiBase,
-    ...options,
+    ...opts,
   })
-  if (pending)
-    return data.value
+  return data.value as T
 }
 
 export default useApiFetch
