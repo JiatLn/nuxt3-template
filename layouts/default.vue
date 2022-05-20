@@ -3,7 +3,6 @@
 <template>
   <main>
     <TheNav />
-    <TheHeader />
     <div min-h-100vh>
       <slot />
     </div>
@@ -11,4 +10,5 @@
   </main>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+</style>
