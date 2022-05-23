@@ -8,7 +8,6 @@ const data = await fn.sayHi('haha')
   <div>
     <div>这里是首页</div>
     <p>data: {{ data }}</p>
-    <n-button>naive-ui</n-button>
     <div text="xl red-400" i-carbon-home />
   </div>
 </template>
