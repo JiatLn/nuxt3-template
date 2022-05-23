@@ -17,9 +17,13 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.1",
     "@unocss/nuxt": "^0.34.0",
-    "eslint": "^8.15.0",
+    "eslint": "^8.16.0",
     "naive-ui": "^2.29.0",
     "nuxt": "^3.0.0-rc.3",
     "unplugin-vue-components": "^0.19.5"
+  },
+  "dependencies": {
+    "@iconify/json": "^2.1.48",
+    "@unocss/preset-icons": "^0.34.0"
   }
 }
