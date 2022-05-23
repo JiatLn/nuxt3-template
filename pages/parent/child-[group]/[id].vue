@@ -3,7 +3,8 @@ const route = useRoute()
 </script>
 
 <template>
-  <div>我是子页面 {{ route.params }}</div>
+  <div>idid {{ route.params }}</div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+</style>

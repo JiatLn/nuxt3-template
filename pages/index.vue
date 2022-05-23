@@ -6,9 +6,11 @@ const data = await fn.sayHi('haha')
 
 <template>
   <div>
-    <div>这里是首页</div>
+    <div>
+      home page
+    </div>
     <p>data: {{ data }}</p>
-    <div text="xl red-400" i-carbon-home />
+
   </div>
 </template>
 
