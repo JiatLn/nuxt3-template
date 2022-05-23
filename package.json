@@ -1,11 +1,11 @@
 {
   "name": "nuxt3-template",
+  "private": true,
+  "license": "MIT",
   "author": {
     "name": "JiatLn",
     "email": "lne128gene980@163.com"
   },
-  "license": "MIT",
-  "private": true,
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev --port 2022 --open",
@@ -14,15 +14,16 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
+  "dependencies": {
+    "@iconify/json": "^2.1.48",
+    "@unocss/preset-icons": "^0.34.0",
+    "typescript": "^4.6.4"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.1",
     "@unocss/nuxt": "^0.34.0",
     "eslint": "^8.16.0",
     "nuxt": "^3.0.0-rc.3",
     "unplugin-vue-components": "^0.19.5"
-  },
-  "dependencies": {
-    "@iconify/json": "^2.1.48",
-    "@unocss/preset-icons": "^0.34.0"
   }
 }
