@@ -3,7 +3,7 @@
 <template>
   <main>
     <TheNav />
-    <div min-h-100vh>
+    <div min-h="[calc(100vh-80px)]">
       <slot />
     </div>
     <TheFooter />
