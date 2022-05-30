@@ -42,6 +42,16 @@ const MenuItems: Menu[] = [
           },
         },
       },
+      {
+        label: 'Group',
+        route: {
+          name: 'parent-child-group-id',
+          params: {
+            group: '666',
+            id: '777',
+          },
+        },
+      },
     ],
   },
   {

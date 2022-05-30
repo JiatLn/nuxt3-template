@@ -3,7 +3,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <div>idid {{ route.params }}</div>
+  <div>group {{ route.params }}</div>
 </template>
 
 <style scoped lang="scss">
