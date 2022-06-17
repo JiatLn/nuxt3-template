@@ -23,6 +23,8 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.1",
     "@unocss/nuxt": "^0.39.0",
+    "@vueuse/core": "^8.7.3",
+    "@vueuse/nuxt": "^8.7.3",
     "eslint": "^8.17.0",
     "nuxt": "^3.0.0-rc.4",
     "unplugin-vue-components": "^0.19.6"

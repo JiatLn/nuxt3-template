@@ -10,8 +10,13 @@ export default defineNuxtConfig({
   },
   modules: [
     '@unocss/nuxt',
+    '@vueuse/nuxt',
   ],
-  components: true,
+  components: {
+    dirs: [
+      '~/components',
+    ],
+  },
   unocss: {
     preflight: true,
   },

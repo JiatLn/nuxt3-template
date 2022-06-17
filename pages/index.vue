@@ -10,7 +10,7 @@ const data = await fn.sayHi('haha')
       home page
     </div>
     <p>data: {{ data }}</p>
-
+    <LittleDemoTheVueUse />
   </div>
 </template>
 
