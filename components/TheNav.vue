@@ -10,8 +10,8 @@ const { menuItems } = useMenu()
       </NuxtLink>
       <div v-else relative class="nav-item">
         <div>{{ item.label }}</div>
-        <div absolute top="100%" flex="c col" class="nav-item__sub-items">
-          <NuxtLink v-for="child in item.subMenu" :key="child.label" :to="child.route" active-class="text-brand-primary" transition="all" hover:text-brand-primary>
+        <div absolute top="100%" left="0" flex="c col" class="nav-item__sub-items">
+          <NuxtLink v-for="child in item.subMenu" :key="child.label" :to="child.route" active-class="text-brand-primary" transition="all" hover:text-brand-primary bg="black" text-white px-2 py-1>
             {{ child.label }}
           </NuxtLink>
         </div>
@@ -31,8 +31,11 @@ const { menuItems } = useMenu()
   }
 
   .nav-item__sub-items {
-    height: 0;
+    // top: 50%;
+    left: 50%;
     overflow: hidden;
+    height: 0;
+    transform: translateX(-50%);
     @apply transition-all;
   }
 }
