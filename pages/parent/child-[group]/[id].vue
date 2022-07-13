@@ -6,5 +6,5 @@ const route = useRoute()
   <div>group {{ route.params }}</div>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="less">
 </style>

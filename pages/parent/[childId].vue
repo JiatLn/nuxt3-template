@@ -10,5 +10,5 @@ const route = useRoute()
   <div>child page: {{ route.params }}</div>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="less">
 </style>
