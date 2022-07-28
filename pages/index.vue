@@ -1,7 +1,11 @@
 <script setup lang="ts">
+import { useCounterStore } from '~~/stores/myStore'
+
 const fn = useServerFn()
 
 const data = await fn.sayHi('haha')
+
+const store = useCounterStore()
 </script>
 
 <template>
@@ -11,6 +15,12 @@ const data = await fn.sayHi('haha')
     </h2>
     <p>data: {{ data }}</p>
     <LittleDemoTheVueUse />
+    <div>
+      <pre>{{ store.$state }}</pre>
+      <button btn @click="store.increment()">
+        +1
+      </button>
+    </div>
   </div>
 </template>
 

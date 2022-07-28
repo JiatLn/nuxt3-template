@@ -8,6 +8,19 @@ export default defineNuxtConfig({
       apiBase: process.env.BASE_URL,
     },
   },
+  buildModules: [
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: [
+          // automatically imports `usePinia()`
+          'defineStore',
+          // automatically imports `usePinia()` as `usePiniaStore()`
+          ['defineStore', 'definePiniaStore'],
+        ],
+      },
+    ],
+  ],
   modules: [
     '@unocss/nuxt',
     '@vueuse/nuxt',
