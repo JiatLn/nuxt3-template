@@ -28,7 +28,7 @@
     "@vueuse/core": "^9.0.0",
     "@vueuse/nuxt": "^9.0.0",
     "eslint": "^8.20.0",
-    "nuxt": "^3.0.0-rc.4",
+    "nuxt": "^3.0.0-rc.6",
     "unplugin-vue-components": "^0.21.2"
   }
 }
