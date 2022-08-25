@@ -3,10 +3,7 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   runtimeConfig: {
-    apiSecret: '',
-    public: {
-      apiBase: process.env.BASE_URL,
-    },
+    apiSecret: process.env.BASE_URL,
   },
   buildModules: [
     [
@@ -22,8 +19,9 @@ export default defineNuxtConfig({
     ],
   ],
   modules: [
-    '@unocss/nuxt',
     '@vueuse/nuxt',
+    '@unocss/nuxt',
+    '@pinia/nuxt',
   ],
   components: {
     dirs: [
@@ -32,5 +30,12 @@ export default defineNuxtConfig({
   },
   unocss: {
     preflight: true,
+  },
+  vite: {
+    optimizeDeps: {
+      include: [
+        'vue',
+      ],
+    },
   },
 })
