@@ -25,6 +25,18 @@ const MenuItems: Menu[] = [
     isSingle: false,
     subMenu: [
       {
+        label: 'aa',
+        route: {
+          name: 'parent-aa',
+        },
+      },
+      {
+        label: 'bb',
+        route: {
+          name: 'parent-bb',
+        },
+      },
+      {
         label: 'Child1',
         route: {
           name: 'parent-childId',
