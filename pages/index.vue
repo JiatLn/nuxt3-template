@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { useCounterStore } from '~~/stores/myStore'
 
 const fn = useServerFn()
@@ -6,13 +7,22 @@ const fn = useServerFn()
 const data = await fn.sayHi('haha')
 
 const store = useCounterStore()
+
+const { locale } = useI18n()
+const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
 </script>
 
 <template>
   <div flex="c col" min-h="60vh">
-    <h2 text="2xl" font-bold leading-40>
-      Home Page
-    </h2>
+    <div flex="c" space-x-10px>
+      <h2 text="2xl" font-bold leading-40>
+        {{ $t('home.title') }}
+      </h2>
+      <NuxtLink btn :to="switchLocalePath(locale === 'en' ? 'zhCn' : 'en')">
+        {{ locale === 'en' ? '中文' : 'EN' }}
+      </NuxtLink>
+    </div>
     <p>data: {{ data }}</p>
     <LittleDemoTheVueUse />
     <div>
@@ -25,4 +35,5 @@ const store = useCounterStore()
 </template>
 
 <style scoped lang="less">
+
 </style>

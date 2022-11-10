@@ -1,7 +1,5 @@
-import { defineNuxtConfig } from 'nuxt'
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-export default defineNuxtConfig({
+export default {
   runtimeConfig: {
     apiSecret: process.env.BASE_URL,
   },
@@ -22,7 +20,27 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    lazy: true,
+    locales: [
+      {
+        code: 'zhCn',
+        file: 'zhCn.json',
+      },
+      {
+        code: 'en',
+        file: 'en.json',
+      },
+    ],
+    defaultLocale: 'en',
+    langDir: 'locales',
+    vueI18n: {
+      locale: 'en',
+    },
+    strategy: 'prefix_except_default',
+  },
   components: {
     dirs: [
       '~/components',
@@ -38,4 +56,4 @@ export default defineNuxtConfig({
       ],
     },
   },
-})
+}

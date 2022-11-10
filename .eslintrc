@@ -2,6 +2,7 @@
   "extends": "@antfu",
   "rules": {
     "no-console": "off",
-    "curly": "off"
+    "curly": "off",
+    "antfu/generic-spacing": "off"
   }
 }
