@@ -1,5 +1,16 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default {
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0',
+      title: 'Nuxt3 Template',
+      meta: [
+        { name: 'description', content: 'This is an open source Nuxt3 project template.' },
+        { name: 'keywords', content: 'nuxt3, vue3, template' },
+      ],
+    },
+  },
   runtimeConfig: {
     apiSecret: process.env.BASE_URL,
   },

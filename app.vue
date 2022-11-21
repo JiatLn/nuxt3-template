@@ -1,6 +1,5 @@
 <script setup>
 useHead({
-  title: 'Nuxt3 Template',
   link: [
     {
       rel: 'icon', type: 'image/png', href: '/icon.png',
@@ -11,6 +10,7 @@ useHead({
 
 <template>
   <NuxtLayout>
+    <NuxtLoadingIndicator />
     <NuxtPage />
   </NuxtLayout>
 </template>
