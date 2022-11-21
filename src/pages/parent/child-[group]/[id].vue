@@ -1,9 +1,12 @@
 <script setup lang="ts">
-const route = useRoute()
+const group = useRouteParam('group')
+const groupId = useRouteParam('id')
 </script>
 
 <template>
-  <div>group {{ route.params }}</div>
+  <div>group page</div>
+  <div>group: {{ group }}</div>
+  <div>id: {{ groupId }}</div>
 </template>
 
 <style scoped lang="less">

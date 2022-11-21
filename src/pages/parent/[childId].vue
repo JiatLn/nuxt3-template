@@ -3,11 +3,12 @@ definePageMeta({
   key: route => route.fullPath,
 })
 
-const route = useRoute()
+const childId = useRouteParam<string>('childId')
 </script>
 
 <template>
-  <div>child page: {{ route.params }}</div>
+  <div>child page</div>
+  <div>childId: {{ childId }}</div>
 </template>
 
 <style scoped lang="less">
