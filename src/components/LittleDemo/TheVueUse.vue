@@ -12,4 +12,5 @@ const { x, y } = useMouse()
 </template>
 
 <style scoped lang="less">
+
 </style>

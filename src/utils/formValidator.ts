@@ -1,5 +1,3 @@
-import { isEmail, isPhone } from '~~/utils'
-
 export function validateEmail(rule: any, value: any, callback: any) {
   if (value === '') {
     callback(new Error('请输入电子邮箱'))

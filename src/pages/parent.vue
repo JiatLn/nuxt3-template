@@ -1,14 +1,14 @@
 <script setup lang="ts">
-definePageMeta({
-  key: route => route.fullPath,
-})
-
 const route = useRoute()
 </script>
 
 <template>
-  <div>child page: {{ route.params }}</div>
+  <section>
+    <div>parent page: {{ route.name }}</div>
+    <NuxtPage :foobar="123" />
+  </section>
 </template>
 
 <style scoped lang="less">
+
 </style>

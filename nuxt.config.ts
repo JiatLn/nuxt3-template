@@ -3,6 +3,7 @@ export default {
   runtimeConfig: {
     apiSecret: process.env.BASE_URL,
   },
+  srcDir: 'src/',
   buildModules: [
     [
       '@pinia/nuxt',

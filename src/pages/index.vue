@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { useCounterStore } from '~~/stores/myStore'
-
-const fn = useServerFn()
-
-const data = await fn.sayHi('haha')
+import { useCounterStore } from '~/stores'
 
 const store = useCounterStore()
 
@@ -23,7 +19,6 @@ const switchLocalePath = useSwitchLocalePath()
         {{ locale === 'en' ? '中文' : 'EN' }}
       </NuxtLink>
     </div>
-    <p>data: {{ data }}</p>
     <LittleDemoTheVueUse />
     <div>
       <pre>{{ store.$state }}</pre>

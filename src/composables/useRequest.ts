@@ -1,6 +1,6 @@
 import type { NitroFetchRequest } from 'nitropack'
 import type { UseFetchOptions } from '#app'
-import { useUserStore } from '~~/stores/user'
+import { useUserStore } from '~/stores/user'
 
 export const OK_CODE = 200
 export interface FetchData<T> {

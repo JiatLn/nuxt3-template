@@ -3,11 +3,9 @@ const route = useRoute()
 </script>
 
 <template>
-  <section>
-    <div>parent page: {{ route.name }}</div>
-    <NuxtPage :foobar="123" />
-  </section>
+  <div>group {{ route.params }}</div>
 </template>
 
 <style scoped lang="less">
+
 </style>
