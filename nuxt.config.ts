@@ -68,4 +68,9 @@ export default {
       ],
     },
   },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag: string) => ['html-content'].includes(tag),
+    },
+  },
 }

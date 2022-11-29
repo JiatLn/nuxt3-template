@@ -7,6 +7,8 @@ const store = useCounterStore()
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
+
+const content = computed(() => `<span style="color: red">web-component ${store.count}</span>`)
 </script>
 
 <template>
@@ -26,6 +28,9 @@ const switchLocalePath = useSwitchLocalePath()
         +1
       </button>
     </div>
+    <ClientOnly>
+      <CommonWebContent :content="content" />
+    </ClientOnly>
   </div>
 </template>
 
