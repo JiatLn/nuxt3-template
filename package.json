@@ -7,8 +7,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "nuxi build",
-    "dev": "nuxi dev --port 9726",
+    "dev": "nuxi dev",
+    "build": "nuxi build --dotenv .env.prod",
+    "build:dev": "nuxi build --dotenv .env",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "lint": "eslint .",
