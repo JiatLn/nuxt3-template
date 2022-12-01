@@ -1,42 +1,25 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This is an open source Nuxt3 project template.
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn install
+npm i -g @antfu/ni
 
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+ni
 ```
 
 ## Development Server
 
-Start the development server on http://localhost:3000
+Start the development server on http://localhost:9726
 
 ```bash
-npm run dev
+nr dev
 ```
 
-## Production
+## License
 
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+[MIT](./LICENSE) License © 2022-Present [JiatLn](https://github.com/JiatLn)
