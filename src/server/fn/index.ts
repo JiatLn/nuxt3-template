@@ -2,10 +2,6 @@ import { $fetch } from 'ohmyfetch'
 import LRU from 'lru-cache'
 import { hash as ohash } from 'ohash'
 
-export async function sayHi(name: string, cnt: number) {
-  return `Hello ${name} from server, see you ${cnt} times.`
-}
-
 const cache = new LRU<string, any>({
   max: 500,
   ttl: 2000 * 60 * 60, // 2 hour
@@ -26,12 +22,12 @@ async function _baseFetch<T>(url: string, params: RecordParam = {}, headers: Rec
   })
 }
 
-export function baseFetch<T>(url: string, params: Record<string, string | number | undefined> = {}): Promise<T> {
+export function baseFetch<T>(url: string, params: RecordParam = {}, headers: RecordParam = {}): Promise<T> {
   console.log('url', url)
   const hash = ohash([url, params])
   if (!cache.has(hash)) {
     cache.set(hash,
-      _baseFetch(url, params)
+      _baseFetch(url, params, headers)
         .catch((e) => {
           cache.delete(hash)
           throw e
