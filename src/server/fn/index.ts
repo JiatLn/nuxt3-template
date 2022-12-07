@@ -2,8 +2,8 @@ import { $fetch } from 'ohmyfetch'
 import LRU from 'lru-cache'
 import { hash as ohash } from 'ohash'
 
-export async function sayHi(name: string) {
-  return `Hello ${name} from server`
+export async function sayHi(name: string, cnt: number) {
+  return `Hello ${name} from server, see you ${cnt} times.`
 }
 
 const cache = new LRU<string, any>({
