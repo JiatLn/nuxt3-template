@@ -1,4 +1,6 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+import Compression from 'vite-plugin-compression'
+
+// https://nuxt.com/docs/api/configuration/nuxt.config
 export default {
   app: {
     head: {
@@ -67,6 +69,9 @@ export default {
         'vue',
       ],
     },
+    plugins: [
+      Compression({}), // gzip
+    ],
   },
   vue: {
     compilerOptions: {

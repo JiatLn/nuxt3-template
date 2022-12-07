@@ -34,6 +34,7 @@
     "@vueuse/nuxt": "^9.6.0",
     "eslint": "^8.29.0",
     "nuxt": "^3.0.0",
-    "unplugin-vue-components": "^0.22.11"
+    "unplugin-vue-components": "^0.22.11",
+    "vite-plugin-compression": "^0.5.1"
   }
 }
