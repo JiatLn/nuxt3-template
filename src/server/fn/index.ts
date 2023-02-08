@@ -1,4 +1,3 @@
-import { $fetch } from 'ohmyfetch'
 import LRU from 'lru-cache'
 import { hash as ohash } from 'ohash'
 
