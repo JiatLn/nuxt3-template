@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.2",
+    "@nuxt/devtools": "^0.1.4",
     "@nuxt/types": "^2.16.0",
     "@types/js-cookie": "^3.0.3",
     "@types/node": "^18.14.0",

@@ -31,11 +31,19 @@ export default {
     ],
   ],
   modules: [
+    '@nuxt/devtools',
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/i18n',
   ],
+  devtools: {
+    // Enable devtools (default: true)
+    enabled: true,
+    // VS Code Server options
+    vscode: {},
+    // ...other options
+  },
   i18n: {
     lazy: true,
     locales: [
