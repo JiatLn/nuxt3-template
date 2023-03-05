@@ -16,26 +16,26 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.24",
+    "@iconify/json": "^2.2.30",
     "@nuxtjs/i18n": "^8.0.0-beta.3",
-    "@pinia/nuxt": "^0.4.6",
-    "@unocss/preset-icons": "^0.49.7",
+    "@pinia/nuxt": "^0.4.7",
+    "@unocss/preset-icons": "^0.50.3",
     "js-cookie": "^3.0.1",
     "less": "^4.1.3",
-    "lru-cache": "^7.16.1",
+    "lru-cache": "^7.18.2",
     "typescript": "^4.9.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.35.2",
-    "@nuxt/devtools": "^0.1.4",
+    "@antfu/eslint-config": "^0.36.0",
+    "@nuxt/devtools": "^0.2.5",
     "@nuxt/types": "^2.16.0",
     "@types/js-cookie": "^3.0.3",
-    "@types/node": "^18.14.0",
-    "@unocss/nuxt": "^0.49.7",
+    "@types/node": "^18.14.6",
+    "@unocss/nuxt": "^0.50.3",
     "@vueuse/core": "^9.13.0",
     "@vueuse/nuxt": "^9.13.0",
-    "eslint": "^8.34.0",
-    "nuxt": "^3.2.2",
+    "eslint": "^8.35.0",
+    "nuxt": "^3.2.3",
     "unplugin-vue-components": "^0.24.0",
     "vite-plugin-compression": "^0.5.1"
   }
