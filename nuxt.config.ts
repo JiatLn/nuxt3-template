@@ -17,19 +17,6 @@ export default {
     apiSecret: process.env.BASE_URL,
   },
   srcDir: 'src/',
-  buildModules: [
-    [
-      '@pinia/nuxt',
-      {
-        autoImports: [
-          // automatically imports `usePinia()`
-          'defineStore',
-          // automatically imports `usePinia()` as `usePiniaStore()`
-          ['defineStore', 'definePiniaStore'],
-        ],
-      },
-    ],
-  ],
   modules: [
     '@nuxt/devtools',
     '@vueuse/nuxt',
@@ -37,6 +24,11 @@ export default {
     '@pinia/nuxt',
     '@nuxtjs/i18n',
   ],
+  components: {
+    dirs: [
+      '~/components',
+    ],
+  },
   devtools: {
     // Enable devtools (default: true)
     enabled: true,
@@ -63,9 +55,10 @@ export default {
     },
     strategy: 'prefix_except_default',
   },
-  components: {
-    dirs: [
-      '~/components',
+  pinia: {
+    autoImports: [
+      // automatically imports `defineStore`
+      'defineStore', // import { defineStore } from 'pinia'
     ],
   },
   unocss: {
