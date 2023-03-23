@@ -25,7 +25,8 @@ function initWebComp() {
           if (name === 'content') {
             const shadow = this.shadowRoot
             if (shadow) {
-              shadow.innerHTML = newVal
+              const regex = /<img/gi
+              shadow.innerHTML = newVal.replaceAll(regex, '<img style="max-width: 100%!important;height:auto" ')
             }
           }
         }
@@ -46,5 +47,4 @@ onMounted(() => {
 </template>
 
 <style scoped lang="less">
-
 </style>
