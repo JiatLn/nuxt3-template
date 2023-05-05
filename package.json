@@ -1,11 +1,19 @@
 {
   "name": "nuxt3-template",
   "private": true,
+  "description": "a nuxt3 template starter",
   "author": {
     "name": "JiatLn",
     "email": "lne128gene980@163.com"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JiatLn/nuxt3-template"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build --dotenv .env.prod",
