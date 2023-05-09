@@ -22,6 +22,7 @@ export default {
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
+    'nuxt-icon',
   ],
   components: {
     dirs: [

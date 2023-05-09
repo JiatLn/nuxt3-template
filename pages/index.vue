@@ -14,11 +14,13 @@ const { isLoggedIn } = storeToRefs($userStore)
         Home
       </h2>
     </div>
-    <button v-if="!isLoggedIn" btn @click="$userStore.login('a token')">
-      Login
+    <button v-if="!isLoggedIn" btn flex-c @click="$userStore.login('a token')">
+      <Icon name="pixelarticons:login" />
+      <span ml-2>Login</span>
     </button>
     <button v-else btn @click="$userStore.logout()">
-      Logout
+      <Icon name="pixelarticons:logout" />
+      <span ml-2>Logout</span>
     </button>
     <LittleDemoTheVueUse />
     <ClientOnly>
