@@ -22,7 +22,6 @@ export default {
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/i18n',
   ],
   components: {
     dirs: [
@@ -35,25 +34,6 @@ export default {
     // VS Code Server options
     vscode: {},
     // ...other options
-  },
-  i18n: {
-    lazy: true,
-    locales: [
-      {
-        code: 'zhCn',
-        file: 'zhCn.json',
-      },
-      {
-        code: 'en',
-        file: 'en.json',
-      },
-    ],
-    defaultLocale: 'en',
-    langDir: 'locales',
-    vueI18n: {
-      locale: 'en',
-    },
-    strategy: 'prefix_except_default',
   },
   pinia: {
     autoImports: [
