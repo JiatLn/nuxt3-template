@@ -20,6 +20,8 @@ export default {
     '@nuxt/devtools',
     '@vueuse/nuxt',
     '@unocss/nuxt',
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
   ],
   components: {
     dirs: [
