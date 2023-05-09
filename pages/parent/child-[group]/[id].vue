@@ -10,5 +10,4 @@ const groupId = useRouteParam('id')
 </template>
 
 <style scoped lang="scss">
-
 </style>

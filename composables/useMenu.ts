@@ -75,7 +75,7 @@ const MenuItems: Menu[] = [
   },
 ]
 
-export const useMenu = () => {
+export function useMenu() {
   return {
     menuItems: MenuItems,
   }

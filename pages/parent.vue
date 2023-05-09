@@ -10,5 +10,4 @@ const route = useRoute()
 </template>
 
 <style scoped lang="scss">
-
 </style>

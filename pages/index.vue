@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import { useCounterStore } from '~/stores'
-
-const store = useCounterStore()
-
-const content = computed(() => `<span style="color: red">web-component ${store.count}</span>`)
+const content = computed(() => '<span style="color: red">web-component 111</span>')
 </script>
 
 <template>
@@ -14,12 +10,6 @@ const content = computed(() => `<span style="color: red">web-component ${store.c
       </h2>
     </div>
     <LittleDemoTheVueUse />
-    <div>
-      <pre>{{ store.$state }}</pre>
-      <button btn @click="store.increment()">
-        +1
-      </button>
-    </div>
     <ClientOnly>
       <CommonWebContent :content="content" />
     </ClientOnly>
@@ -27,5 +17,4 @@ const content = computed(() => `<span style="color: red">web-component ${store.c
 </template>
 
 <style scoped lang="scss">
-
 </style>

@@ -16,12 +16,10 @@ export default {
   runtimeConfig: {
     apiSecret: process.env.BASE_URL,
   },
-  srcDir: 'src/',
   modules: [
     '@nuxt/devtools',
     '@vueuse/nuxt',
     '@unocss/nuxt',
-    '@pinia/nuxt',
   ],
   components: {
     dirs: [
@@ -34,12 +32,6 @@ export default {
     // VS Code Server options
     vscode: {},
     // ...other options
-  },
-  pinia: {
-    autoImports: [
-      // automatically imports `defineStore`
-      'defineStore', // import { defineStore } from 'pinia'
-    ],
   },
   unocss: {
     preflight: true,

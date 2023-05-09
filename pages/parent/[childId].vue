@@ -12,5 +12,4 @@ const childId = useRouteParam<string>('childId')
 </template>
 
 <style scoped lang="scss">
-
 </style>

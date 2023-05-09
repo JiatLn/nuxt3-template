@@ -24,11 +24,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.62",
-    "@pinia/nuxt": "^0.4.9",
     "@unocss/preset-icons": "^0.51.12",
-    "js-cookie": "^3.0.5",
-    "pinia": "^2.0.35",
     "sass": "^1.62.1",
     "typescript": "^5.0.4"
   },
@@ -36,7 +32,6 @@
     "@antfu/eslint-config": "^0.38.6",
     "@nuxt/devtools": "^0.4.5",
     "@nuxt/types": "^2.16.3",
-    "@types/js-cookie": "^3.0.3",
     "@types/node": "^20.1.0",
     "@unocss/nuxt": "^0.51.12",
     "@vueuse/core": "^10.1.2",
