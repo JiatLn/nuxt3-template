@@ -11,6 +11,6 @@ const childId = useRouteParam<string>('childId')
   <div>childId: {{ childId }}</div>
 </template>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 
 </style>

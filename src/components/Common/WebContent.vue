@@ -46,5 +46,5 @@ onMounted(() => {
   <html-content :content="props.content" />
 </template>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 </style>

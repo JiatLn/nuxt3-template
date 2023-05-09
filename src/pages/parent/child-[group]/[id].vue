@@ -9,6 +9,6 @@ const groupId = useRouteParam('id')
   <div>id: {{ groupId }}</div>
 </template>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 
 </style>

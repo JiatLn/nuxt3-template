@@ -26,6 +26,6 @@ const content = computed(() => `<span style="color: red">web-component ${store.c
   </div>
 </template>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 
 </style>

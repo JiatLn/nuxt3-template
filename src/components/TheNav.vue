@@ -20,7 +20,7 @@ const { menuItems } = useMenu()
   </nav>
 </template>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 .nav-item {
   @apply cursor-pointer transition-all;
 
