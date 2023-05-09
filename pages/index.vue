@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 
-const content = computed(() => '<span style="color: red">web-component 111</span>')
-
 const { $userStore } = useNuxtApp()
 const { isLoggedIn } = storeToRefs($userStore)
 </script>
@@ -22,10 +20,6 @@ const { isLoggedIn } = storeToRefs($userStore)
       <Icon name="pixelarticons:logout" />
       <span ml-2>Logout</span>
     </button>
-    <LittleDemoTheVueUse />
-    <ClientOnly>
-      <CommonWebContent :content="content" />
-    </ClientOnly>
   </div>
 </template>
 

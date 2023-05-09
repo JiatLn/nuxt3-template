@@ -13,6 +13,7 @@ export default defineConfig({
     ['btn', 'px-4 py-1 rounded inline-block bg-#ffa631 text-white cursor-pointer hover:bg-#ffa631dd disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
     ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-#ffa631'],
     ['flex-c', 'flex items-center justify-center'],
+    ['cp', 'cursor-pointer'],
   ],
   theme: {
     colors: {
