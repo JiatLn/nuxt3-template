@@ -36,6 +36,9 @@ export default {
     vscode: {},
     // ...other options
   },
+  css: [
+    '@/assets/styles/global.css',
+  ],
   unocss: {
     preflight: true,
   },
